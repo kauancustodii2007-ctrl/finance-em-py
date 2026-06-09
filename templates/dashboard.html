@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finance Manager</title>
+
+    <link rel="stylesheet" href="/static/css/style.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+
+<div class="sidebar">
+    <h2>💰 Finance Manager</h2>
+
+    <ul>
+        <li>Dashboard</li>
+        <li>Despesas</li>
+        <li>Relatórios</li>
+        <li>Configurações</li>
+    </ul>
+</div>
+
+<div class="main">
+
+    <div class="header">
+        <h1>Painel Financeiro</h1>
+
+        <button class="btn">
+            + Nova Despesa
+        </button>
+    </div>
+
+    <div class="cards">
+
+    <div class="card">
+        <h3>Receita Mensal</h3>
+        <input type="number" id="receitas" value="8500">
+    </div>
+
+    <div class="card">
+        <h3>Alimentação</h3>
+        <input type="number" id="alimentacao" value="450">
+    </div>
+
+    <div class="card">
+        <h3>Transporte</h3>
+        <input type="number" id="transporte" value="200">
+    </div>
+
+    <div class="card">
+        <h3>Lazer</h3>
+        <input type="number" id="lazer" value="150">
+    </div>
+
+    <div class="card">
+        <h3>Investimentos</h3>
+        <input type="number" id="investimentos" value="500">
+    </div>
+
+    <div class="card">
+        <h3>Saldo Atual</h3>
+        <p id="saldo">R$ 7200</p>
+    </div>
+
+</div>
+
+    <div class="chart-container">
+        <h2>Gastos por Categoria</h2>
+
+        <canvas id="expenseChart"></canvas>
+    </div>
+
+</div>
+
+<script src="/static/js/dashboard.js"></script>
+
+</body>
+</html>
